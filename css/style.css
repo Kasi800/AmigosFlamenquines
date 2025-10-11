@@ -1,0 +1,5 @@
+/* Sobrescribimos el color de fondo de la navbar de Bootstrap */
+.navbar-bg-custom {
+    background-color: #881536;
+}
+
