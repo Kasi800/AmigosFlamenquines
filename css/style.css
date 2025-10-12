@@ -32,3 +32,11 @@
 	font-weight: 700;
 	font-style: normal;
 }
+
+.bg-cont-image {
+  background-image: url('../assets/img/img_decoracion_pagina/fondo_andaluz.jpg'); /* ajusta la ruta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
