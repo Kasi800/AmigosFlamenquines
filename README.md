@@ -22,4 +22,4 @@ Este proyecto es totalmente **responsive**, se puede visualizar para dispositivo
 
 - **[Enlaces del Repositorio 🔗](https://github.com/xamarbel660/AmigosFlamenquines)**
 
-- **[Enlace de la página Web🌐](https://proyecto-papoan.pages.dev/)**
+- **[Enlace de la página Web🌐](https://amigos-flamenquines.vercel.app/)**
