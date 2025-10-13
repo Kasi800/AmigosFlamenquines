@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <!-- Navbar -->
         <div class="row">
             <nav class="navbar navbar-expand-lg bg-custom">
@@ -47,42 +47,18 @@
             </nav>
         </div>
 
-        <!-- Hacer un Scrollspy donde por ejemplo: tenemos flamenquines normales, mas abajo,
-        flamenquines especiales, flamenquoines de colaboraciones, el scrollspytiene que estar ha la izquierda -->
-        <div class="row">
-            <!-- indice de la izquierda -->
-            <!-- <div class="col-2">
-                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link" href="#item-1">Item 1</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-                        </nav>
-                        <a class="nav-link" href="#item-2">Item 2</a>
-                        <a class="nav-link" href="#item-3">Item 3</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                        </nav>
-                    </nav>
-                </nav>
-            </div> -->
-
+        <!-- Scrollspy -->
+        <!-- Cuando esta lg -->
+        <div class="row d-none d-lg-flex">
+            <!-- Indice de la izquierda -->
             <div class="col-2 position-sticky sticky-scrollspy pt-2">
-                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end border-bottom">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4">
                     <nav class="nav nav-pills flex-column">
-                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <a class="nav-link" href="#nuestrosFlamenquines">Nuestros Flamenquines</a>
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                            <a class="nav-link ms-3 my-1" href="#FlamenquinesDulces">Flamenquines Dulces</a>
                         </nav>
-                        <a class="nav-link" href="#item-2">Item 2</a>
-                        <a class="nav-link" href="#item-3">Item 3</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                        </nav>
+                        <a class="nav-link" href="#flamenquinesColab">Flamenquines de Colaboraciones</a>
                     </nav>
                 </nav>
             </div>
@@ -90,7 +66,9 @@
             <div class="col-10">
                 <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
                     class="scrollspy-example-2" tabindex="0">
-                    <div class="row" id="item-1">
+                    <div class="row" id="nuestrosFlamenquines">
+
+                        <h3 class="pt-2 ps-0 border-bottom border-dark border-3">Nuestros Flamenquines</h3>
                         <div class="col-6 py-2">
                             <div class="card" style="width: 25rem;">
                                 <div class="card-body">
@@ -102,7 +80,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +99,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinSushi.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -138,7 +118,24 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinPureDePapa.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Cuatro quesos</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/flamenquinCuatroQuesos.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -156,7 +153,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinGriego.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +172,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinHamburguesaAmericana.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -192,7 +191,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinPizzaPepperoni.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -210,7 +210,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquin.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -228,7 +229,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinPulpoGallega.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -246,7 +248,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinVegano.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -264,7 +267,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinCoqAuVin.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -282,7 +286,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinFalafel.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -300,7 +305,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinPaella.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -318,7 +324,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinShawarma.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -336,7 +343,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinHawaiana.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -354,25 +362,8 @@
                                                 the bulk of the card’s content.</p>
                                         </div>
                                         <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-6 py-2">
-                            <div class="card" style="width: 25rem;">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up
-                                                the bulk of the card’s content.</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <img src="./assets/img/img_flamenquines/flamenquin.png" class="card-img-top rounded-2" alt="...">
+                                            <img src="./assets/img/img_flamenquines/flamenquinRatatouille.png"
+                                                class="card-img-top rounded-2" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -380,195 +371,821 @@
                         </div>
                     </div>
 
-                    <div id="item-1-1">
-                        <h5>Item 1-1</h5>
-                        <p>Aliqua labore eu mollit ullamco ut ipsum deserunt. Reprehenderit incididunt ullamco id dolor
-                            cupidatat et duis fugiat. Ad excepteur ut sint eu consequat pariatur eiusmod reprehenderit
-                            proident. Voluptate elit cillum consectetur velit. Labore sit pariatur culpa ipsum non
-                            occaecat mollit duis veniam laborum et et exercitation consequat. Aliquip consequat laboris
-                            proident dolor nostrud fugiat dolor. Nulla irure exercitation commodo Lorem ea sit commodo
-                            esse.
+                    <div class="row" id="FlamenquinesDulces">
 
-                            Esse cupidatat aliqua id exercitation voluptate duis non est adipisicing id mollit. Nulla
-                            Lorem commodo officia magna amet in nulla commodo consectetur. Pariatur nostrud voluptate ex
-                            laboris non ullamco velit do. Pariatur et sint ad dolor deserunt.
+                        <h3 class="pt-2 ps-0 border-bottom border-dark border-3">Flamenquines Dulces</h3>
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquinesDulces/flamenquinDulceDeChocolateYPlátano.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            In id irure et esse incididunt in cupidatat reprehenderit. Enim nulla cillum magna laborum
-                            in laboris do in aliqua sit aute tempor velit. Culpa labore ipsum et dolor voluptate in quis
-                            cupidatat aliqua aliquip laborum in do ad. Sit commodo est ea enim. Velit laboris minim
-                            aliquip deserunt ullamco dolor qui velit cillum commodo proident nulla deserunt.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquinesDulces/flamenquinDulceDeManzanaYCaramelo.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Dolore in non irure est enim in sint deserunt laboris. Laborum deserunt cupidatat eu ad
-                            tempor nisi non qui aute voluptate culpa in laborum. Aute cillum aliqua id amet sit laboris
-                            laboris ullamco do eiusmod sit culpa fugiat nulla.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquinesDulces/flamenquinFiladelfiaYArándanos.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Labore reprehenderit aute velit consequat voluptate. Reprehenderit mollit minim ipsum quis
-                            consequat tempor et. Lorem dolore proident ut incididunt sunt id velit ullamco id eiusmod.
-                            Officia consectetur esse adipisicing ut cupidatat.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Cuatro quesos</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquinesDulces/flamenquinNutellaYFresas.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Duis deserunt aliquip quis velit culpa non nostrud sunt amet. Esse laboris cupidatat
-                            exercitation non veniam nulla enim fugiat proident proident incididunt deserunt sunt aute.
-                            Aute officia deserunt quis mollit sint ut adipisicing magna eu nostrud tempor voluptate ex
-                            deserunt. Nostrud mollit nostrud aute id.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquinesDulces/flamenquinPiñaAsadaYCoco.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Magna proident irure incididunt eiusmod velit ea exercitation voluptate aliqua elit ex amet.
-                            Et mollit fugiat aliquip nulla commodo eu dolore aliquip cupidatat sint exercitation in do
-                            quis. Fugiat aute enim et labore amet labore anim cillum sunt ipsum. Eu sunt incididunt
-                            cillum esse ad velit non culpa ut ut.
-
-                            Magna in nulla in do occaecat cillum ad ex. Exercitation excepteur voluptate enim pariatur.
-                            Magna deserunt sit ad culpa qui enim aliqua pariatur dolore.
-
-                            Do proident anim et non proident. Nisi deserunt ipsum aute Lorem ullamco et id eiusmod amet.
-                            Nisi in aliqua do culpa tempor reprehenderit tempor laborum magna nisi quis pariatur.
-
-                            Aliqua aliqua duis nostrud do magna voluptate consequat consequat. Culpa do consectetur
-                            deserunt officia cillum quis id deserunt nulla id nulla culpa ipsum. Ex duis dolore officia
-                            officia adipisicing exercitation ex consectetur qui magna ad nulla adipisicing anim. Eu enim
-                            velit proident minim non. Ea aliqua laboris reprehenderit et pariatur consequat voluptate
-                            magna exercitation in officia occaecat irure ea. Sunt commodo pariatur est fugiat.</p>
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquinesDulces/flamenquinTorrijaYCremaPastelera.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="item-1-2">
-                        <h5>Item 1-2</h5>
-                        <p>Aliqua labore eu mollit ullamco ut ipsum deserunt. Reprehenderit incididunt ullamco id dolor
-                            cupidatat et duis fugiat. Ad excepteur ut sint eu consequat pariatur eiusmod reprehenderit
-                            proident. Voluptate elit cillum consectetur velit. Labore sit pariatur culpa ipsum non
-                            occaecat mollit duis veniam laborum et et exercitation consequat. Aliquip consequat laboris
-                            proident dolor nostrud fugiat dolor. Nulla irure exercitation commodo Lorem ea sit commodo
-                            esse.
 
-                            Esse cupidatat aliqua id exercitation voluptate duis non est adipisicing id mollit. Nulla
-                            Lorem commodo officia magna amet in nulla commodo consectetur. Pariatur nostrud voluptate ex
-                            laboris non ullamco velit do. Pariatur et sint ad dolor deserunt.
+                    <div class="row" id="flamenquinesColab">
+                        <h3 class="pt-2 ps-0 border-bottom border-dark border-3">Flamenquines de Colaboraciones</h3>
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquines_Colaboraciones/flamenquinGameOfThrones.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            In id irure et esse incididunt in cupidatat reprehenderit. Enim nulla cillum magna laborum
-                            in laboris do in aliqua sit aute tempor velit. Culpa labore ipsum et dolor voluptate in quis
-                            cupidatat aliqua aliquip laborum in do ad. Sit commodo est ea enim. Velit laboris minim
-                            aliquip deserunt ullamco dolor qui velit cillum commodo proident nulla deserunt.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquines_Colaboraciones/flamenquinHULK.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Dolore in non irure est enim in sint deserunt laboris. Laborum deserunt cupidatat eu ad
-                            tempor nisi non qui aute voluptate culpa in laborum. Aute cillum aliqua id amet sit laboris
-                            laboris ullamco do eiusmod sit culpa fugiat nulla.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquines_Colaboraciones/flamenquinIronMan.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Labore reprehenderit aute velit consequat voluptate. Reprehenderit mollit minim ipsum quis
-                            consequat tempor et. Lorem dolore proident ut incididunt sunt id velit ullamco id eiusmod.
-                            Officia consectetur esse adipisicing ut cupidatat.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Cuatro quesos</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquines_Colaboraciones/flamenquinJurassicPark.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Duis deserunt aliquip quis velit culpa non nostrud sunt amet. Esse laboris cupidatat
-                            exercitation non veniam nulla enim fugiat proident proident incididunt deserunt sunt aute.
-                            Aute officia deserunt quis mollit sint ut adipisicing magna eu nostrud tempor voluptate ex
-                            deserunt. Nostrud mollit nostrud aute id.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquines_Colaboraciones/flamenquinMarioBros.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Magna proident irure incididunt eiusmod velit ea exercitation voluptate aliqua elit ex amet.
-                            Et mollit fugiat aliquip nulla commodo eu dolore aliquip cupidatat sint exercitation in do
-                            quis. Fugiat aute enim et labore amet labore anim cillum sunt ipsum. Eu sunt incididunt
-                            cillum esse ad velit non culpa ut ut.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquines_Colaboraciones/flamenquinPikachu.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Magna in nulla in do occaecat cillum ad ex. Exercitation excepteur voluptate enim pariatur.
-                            Magna deserunt sit ad culpa qui enim aliqua pariatur dolore.
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquines_Colaboraciones/flamenquinStarWar.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            Do proident anim et non proident. Nisi deserunt ipsum aute Lorem ullamco et id eiusmod amet.
-                            Nisi in aliqua do culpa tempor reprehenderit tempor laborum magna nisi quis pariatur.
-
-                            Aliqua aliqua duis nostrud do magna voluptate consequat consequat. Culpa do consectetur
-                            deserunt officia cillum quis id deserunt nulla id nulla culpa ipsum. Ex duis dolore officia
-                            officia adipisicing exercitation ex consectetur qui magna ad nulla adipisicing anim. Eu enim
-                            velit proident minim non. Ea aliqua laboris reprehenderit et pariatur consequat voluptate
-                            magna exercitation in officia occaecat irure ea. Sunt commodo pariatur est fugiat.</p>
-                    </div>
-                    <div id="item-2">
-                        <h4>Item 2</h4>
-                        <p>Aliqua labore eu mollit ullamco ut ipsum deserunt. Reprehenderit incididunt ullamco id dolor
-                            cupidatat et duis fugiat. Ad excepteur ut sint eu consequat pariatur eiusmod reprehenderit
-                            proident. Voluptate elit cillum consectetur velit. Labore sit pariatur culpa ipsum non
-                            occaecat mollit duis veniam laborum et et exercitation consequat. Aliquip consequat laboris
-                            proident dolor nostrud fugiat dolor. Nulla irure exercitation commodo Lorem ea sit commodo
-                            esse.
-
-                            Esse cupidatat aliqua id exercitation voluptate duis non est adipisicing id mollit. Nulla
-                            Lorem commodo officia magna amet in nulla commodo consectetur. Pariatur nostrud voluptate ex
-                            laboris non ullamco velit do. Pariatur et sint ad dolor deserunt.
-
-                            In id irure et esse incididunt in cupidatat reprehenderit. Enim nulla cillum magna laborum
-                            in laboris do in aliqua sit aute tempor velit. Culpa labore ipsum et dolor voluptate in quis
-                            cupidatat aliqua aliquip laborum in do ad. Sit commodo est ea enim. Velit laboris minim
-                            aliquip deserunt ullamco dolor qui velit cillum commodo proident nulla deserunt.
-
-                            Dolore in non irure est enim in sint deserunt laboris. Laborum deserunt cupidatat eu ad
-                            tempor nisi non qui aute voluptate culpa in laborum. Aute cillum aliqua id amet sit laboris
-                            laboris ullamco do eiusmod sit culpa fugiat nulla.
-
-                            Labore reprehenderit aute velit consequat voluptate. Reprehenderit mollit minim ipsum quis
-                            consequat tempor et. Lorem dolore proident ut incididunt sunt id velit ullamco id eiusmod.
-                            Officia consectetur esse adipisicing ut cupidatat.
-
-                            Duis deserunt aliquip quis velit culpa non nostrud sunt amet. Esse laboris cupidatat
-                            exercitation non veniam nulla enim fugiat proident proident incididunt deserunt sunt aute.
-                            Aute officia deserunt quis mollit sint ut adipisicing magna eu nostrud tempor voluptate ex
-                            deserunt. Nostrud mollit nostrud aute id.
-
-                            Magna proident irure incididunt eiusmod velit ea exercitation voluptate aliqua elit ex amet.
-                            Et mollit fugiat aliquip nulla commodo eu dolore aliquip cupidatat sint exercitation in do
-                            quis. Fugiat aute enim et labore amet labore anim cillum sunt ipsum. Eu sunt incididunt
-                            cillum esse ad velit non culpa ut ut.
-
-                            Magna in nulla in do occaecat cillum ad ex. Exercitation excepteur voluptate enim pariatur.
-                            Magna deserunt sit ad culpa qui enim aliqua pariatur dolore.
-
-                            Do proident anim et non proident. Nisi deserunt ipsum aute Lorem ullamco et id eiusmod amet.
-                            Nisi in aliqua do culpa tempor reprehenderit tempor laborum magna nisi quis pariatur.
-
-                            Aliqua aliqua duis nostrud do magna voluptate consequat consequat. Culpa do consectetur
-                            deserunt officia cillum quis id deserunt nulla id nulla culpa ipsum. Ex duis dolore officia
-                            officia adipisicing exercitation ex consectetur qui magna ad nulla adipisicing anim. Eu enim
-                            velit proident minim non. Ea aliqua laboris reprehenderit et pariatur consequat voluptate
-                            magna exercitation in officia occaecat irure ea. Sunt commodo pariatur est fugiat.</p>
-                    </div>
-                    <div id="item-3">
-                        <h4>Item 3</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quas nulla nobis nesciunt
-                            unde. Iste beatae, vel eum nihil blanditiis adipisci doloribus sapiente exercitationem vero
-                            ex! Ut rem sint odit.</p>
-                    </div>
-                    <div id="item-3-1">
-                        <h5>Item 3-1</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quas nulla nobis nesciunt
-                            unde. Iste beatae, vel eum nihil blanditiis adipisci doloribus sapiente exercitationem vero
-                            ex! Ut rem sint odit.</p>
-                    </div>
-                    <div id="item-3-2">
-                        <h5>Item 3-2</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quas nulla nobis nesciunt
-                            unde. Iste beatae, vel eum nihil blanditiis adipisci doloribus sapiente exercitationem vero
-                            ex! Ut rem sint odit.</p>
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: 25rem;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up
+                                                the bulk of the card’s content.</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./assets/img/img_flamenquines/img_flamenquines_Colaboraciones/flamenquinThor.png"
+                                                class="card-img-top rounded-2" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <!-- Cambiar footer -->
-        <footer class="container-fluid px-0 pt-3">
-            <div class="row align-items-center bg-custom py-2">
-                <div class="col-12 col-md-6 mt-3">
-                    <p class="text-light text-center text-md-start">
-                        © 2025 AmigosFlamenquines. Todos los derechos reservados.
-                    </p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="text-center text-md-end">
-                        <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-tiktok"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-facebook"></i></a>
+        <!-- Cuando esta md -->
+        <div class="accordion d-none d-md-block d-lg-none" id="accordionExample">
+            <div class="accordion-item">
+                <!-- Flamenquines md -->
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Nuestros Flamenquines
+                    </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="row accordion-body">
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 py-2">
+                            <div class="card" style="width: auto;">
+                                <div class="card-body text-center">
+                                    <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                        class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                    <div class="row">
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up
+                                            the bulk of the card’s content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
+
+                <!-- Flamenquines dulce md -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Flamenquines Dulces
+                        </button>
+                    </h2>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="row accordion-body">
+                            <div class="row" id="FlamenquinesDulces">
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flamenquines colab md -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Flamenquines de Colaboraciones
+                        </button>
+                    </h2>
+
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="row accordion-body">
+                            <div class="row" id="flamenquinesColab">
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body text-center">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body text-center">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body text-center">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body text-center">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body text-center">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body text-center">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body text-center">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 py-2">
+                                    <div class="card" style="width: auto;">
+                                        <div class="card-body text-center">
+                                            <img src="./assets/img/img_flamenquines/flamenquinMexicano.png"
+                                                class="card-img-top rounded-2 size-img-card-md" alt="...">
+                                            <div class="row">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and
+                                                    make
+                                                    up
+                                                    the bulk of the card’s content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <!-- Cambiar footer -->
+                <footer class="container-fluid px-0 pt-3">
+                    <div class="row align-items-center bg-custom py-2">
+                        <div class="col-12 col-md-6 mt-3">
+                            <p class="text-light text-center text-md-start">
+                                © 2025 AmigosFlamenquines. Todos los derechos reservados.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="text-center text-md-end">
+                                <a href="#" class="btn btn-outline-light btn-floating m-1"><i
+                                        class="bi bi-tiktok"></i></a>
+                                <a href="#" class="btn btn-outline-light btn-floating m-1"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-light btn-floating m-1"><i
+                                        class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="btn btn-outline-light btn-floating m-1"><i
+                                        class="bi bi-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>

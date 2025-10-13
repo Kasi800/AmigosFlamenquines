@@ -71,3 +71,8 @@ footer {
 	top: 0px;
 	align-self: flex-start;
 }
+
+.size-img-card-md{
+	height: 300px;
+	width: 300px;
+}
