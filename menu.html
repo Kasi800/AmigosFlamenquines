@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmigosFlamenquines</title>
+    <link rel="icon" href="./assets/img/img_logos/logo_restaurante.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-custom">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/img/img_logos/logo_restaurante.png" alt="AmigosFlamenquines" width="140" height="70" />
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-1 dosis-200" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-1 dosis-200" href="./reserva.html"><i
+                                        class="bi bi-calendar-event"></i> Reservar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hacer un Scrollspy donde por ejemplo: tenemos flamenquines normales, mas abajo,
+        flamenquines especiales, flamenquoines de colaboraciones, el scrollspytiene que estar ha la izquierda -->
+        <div class="row">
+            <!-- indice de la izquierda -->
+            <!-- <div class="col-2">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div> -->
+
+            <div class="col-2 position-sticky sticky-scrollspy pt-2">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end border-bottom">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="col-10">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                    class="scrollspy-example-2" tabindex="0">
+                    <div id="item-1">
+                        <h4>Item 1</h4>
+                        <p>Aliqua labore eu mollit ullamco ut ipsum deserunt. Reprehenderit incididunt ullamco id dolor
+                            cupidatat et duis fugiat. Ad excepteur ut sint eu consequat pariatur eiusmod reprehenderit
+                            proident. Voluptate elit cillum consectetur velit. Labore sit pariatur culpa ipsum non
+                            occaecat mollit duis veniam laborum et et exercitation consequat. Aliquip consequat laboris
+                            proident dolor nostrud fugiat dolor. Nulla irure exercitation commodo Lorem ea sit commodo
+                            esse.
+
+                            Esse cupidatat aliqua id exercitation voluptate duis non est adipisicing id mollit. Nulla
+                            Lorem commodo officia magna amet in nulla commodo consectetur. Pariatur nostrud voluptate ex
+                            laboris non ullamco velit do. Pariatur et sint ad dolor deserunt.
+
+                            In id irure et esse incididunt in cupidatat reprehenderit. Enim nulla cillum magna laborum
+                            in laboris do in aliqua sit aute tempor velit. Culpa labore ipsum et dolor voluptate in quis
+                            cupidatat aliqua aliquip laborum in do ad. Sit commodo est ea enim. Velit laboris minim
+                            aliquip deserunt ullamco dolor qui velit cillum commodo proident nulla deserunt.
+
+                            Dolore in non irure est enim in sint deserunt laboris. Laborum deserunt cupidatat eu ad
+                            tempor nisi non qui aute voluptate culpa in laborum. Aute cillum aliqua id amet sit laboris
+                            laboris ullamco do eiusmod sit culpa fugiat nulla.
+
+                            Labore reprehenderit aute velit consequat voluptate. Reprehenderit mollit minim ipsum quis
+                            consequat tempor et. Lorem dolore proident ut incididunt sunt id velit ullamco id eiusmod.
+                            Officia consectetur esse adipisicing ut cupidatat.
+
+                            Duis deserunt aliquip quis velit culpa non nostrud sunt amet. Esse laboris cupidatat
+                            exercitation non veniam nulla enim fugiat proident proident incididunt deserunt sunt aute.
+                            Aute officia deserunt quis mollit sint ut adipisicing magna eu nostrud tempor voluptate ex
+                            deserunt. Nostrud mollit nostrud aute id.
+
+                            Magna proident irure incididunt eiusmod velit ea exercitation voluptate aliqua elit ex amet.
+                            Et mollit fugiat aliquip nulla commodo eu dolore aliquip cupidatat sint exercitation in do
+                            quis. Fugiat aute enim et labore amet labore anim cillum sunt ipsum. Eu sunt incididunt
+                            cillum esse ad velit non culpa ut ut.
+
+                            Magna in nulla in do occaecat cillum ad ex. Exercitation excepteur voluptate enim pariatur.
+                            Magna deserunt sit ad culpa qui enim aliqua pariatur dolore.
+
+                            Do proident anim et non proident. Nisi deserunt ipsum aute Lorem ullamco et id eiusmod amet.
+                            Nisi in aliqua do culpa tempor reprehenderit tempor laborum magna nisi quis pariatur.
+
+                            Aliqua aliqua duis nostrud do magna voluptate consequat consequat. Culpa do consectetur
+                            deserunt officia cillum quis id deserunt nulla id nulla culpa ipsum. Ex duis dolore officia
+                            officia adipisicing exercitation ex consectetur qui magna ad nulla adipisicing anim. Eu enim
+                            velit proident minim non. Ea aliqua laboris reprehenderit et pariatur consequat voluptate
+                            magna exercitation in officia occaecat irure ea. Sunt commodo pariatur est fugiat.</p>
+                    </div>
+                    <div id="item-1-1">
+                        <h5>Item 1-1</h5>
+                        <p>Aliqua labore eu mollit ullamco ut ipsum deserunt. Reprehenderit incididunt ullamco id dolor
+                            cupidatat et duis fugiat. Ad excepteur ut sint eu consequat pariatur eiusmod reprehenderit
+                            proident. Voluptate elit cillum consectetur velit. Labore sit pariatur culpa ipsum non
+                            occaecat mollit duis veniam laborum et et exercitation consequat. Aliquip consequat laboris
+                            proident dolor nostrud fugiat dolor. Nulla irure exercitation commodo Lorem ea sit commodo
+                            esse.
+
+                            Esse cupidatat aliqua id exercitation voluptate duis non est adipisicing id mollit. Nulla
+                            Lorem commodo officia magna amet in nulla commodo consectetur. Pariatur nostrud voluptate ex
+                            laboris non ullamco velit do. Pariatur et sint ad dolor deserunt.
+
+                            In id irure et esse incididunt in cupidatat reprehenderit. Enim nulla cillum magna laborum
+                            in laboris do in aliqua sit aute tempor velit. Culpa labore ipsum et dolor voluptate in quis
+                            cupidatat aliqua aliquip laborum in do ad. Sit commodo est ea enim. Velit laboris minim
+                            aliquip deserunt ullamco dolor qui velit cillum commodo proident nulla deserunt.
+
+                            Dolore in non irure est enim in sint deserunt laboris. Laborum deserunt cupidatat eu ad
+                            tempor nisi non qui aute voluptate culpa in laborum. Aute cillum aliqua id amet sit laboris
+                            laboris ullamco do eiusmod sit culpa fugiat nulla.
+
+                            Labore reprehenderit aute velit consequat voluptate. Reprehenderit mollit minim ipsum quis
+                            consequat tempor et. Lorem dolore proident ut incididunt sunt id velit ullamco id eiusmod.
+                            Officia consectetur esse adipisicing ut cupidatat.
+
+                            Duis deserunt aliquip quis velit culpa non nostrud sunt amet. Esse laboris cupidatat
+                            exercitation non veniam nulla enim fugiat proident proident incididunt deserunt sunt aute.
+                            Aute officia deserunt quis mollit sint ut adipisicing magna eu nostrud tempor voluptate ex
+                            deserunt. Nostrud mollit nostrud aute id.
+
+                            Magna proident irure incididunt eiusmod velit ea exercitation voluptate aliqua elit ex amet.
+                            Et mollit fugiat aliquip nulla commodo eu dolore aliquip cupidatat sint exercitation in do
+                            quis. Fugiat aute enim et labore amet labore anim cillum sunt ipsum. Eu sunt incididunt
+                            cillum esse ad velit non culpa ut ut.
+
+                            Magna in nulla in do occaecat cillum ad ex. Exercitation excepteur voluptate enim pariatur.
+                            Magna deserunt sit ad culpa qui enim aliqua pariatur dolore.
+
+                            Do proident anim et non proident. Nisi deserunt ipsum aute Lorem ullamco et id eiusmod amet.
+                            Nisi in aliqua do culpa tempor reprehenderit tempor laborum magna nisi quis pariatur.
+
+                            Aliqua aliqua duis nostrud do magna voluptate consequat consequat. Culpa do consectetur
+                            deserunt officia cillum quis id deserunt nulla id nulla culpa ipsum. Ex duis dolore officia
+                            officia adipisicing exercitation ex consectetur qui magna ad nulla adipisicing anim. Eu enim
+                            velit proident minim non. Ea aliqua laboris reprehenderit et pariatur consequat voluptate
+                            magna exercitation in officia occaecat irure ea. Sunt commodo pariatur est fugiat.</p>
+                    </div>
+                    <div id="item-1-2">
+                        <h5>Item 1-2</h5>
+                        <p>Aliqua labore eu mollit ullamco ut ipsum deserunt. Reprehenderit incididunt ullamco id dolor
+                            cupidatat et duis fugiat. Ad excepteur ut sint eu consequat pariatur eiusmod reprehenderit
+                            proident. Voluptate elit cillum consectetur velit. Labore sit pariatur culpa ipsum non
+                            occaecat mollit duis veniam laborum et et exercitation consequat. Aliquip consequat laboris
+                            proident dolor nostrud fugiat dolor. Nulla irure exercitation commodo Lorem ea sit commodo
+                            esse.
+
+                            Esse cupidatat aliqua id exercitation voluptate duis non est adipisicing id mollit. Nulla
+                            Lorem commodo officia magna amet in nulla commodo consectetur. Pariatur nostrud voluptate ex
+                            laboris non ullamco velit do. Pariatur et sint ad dolor deserunt.
+
+                            In id irure et esse incididunt in cupidatat reprehenderit. Enim nulla cillum magna laborum
+                            in laboris do in aliqua sit aute tempor velit. Culpa labore ipsum et dolor voluptate in quis
+                            cupidatat aliqua aliquip laborum in do ad. Sit commodo est ea enim. Velit laboris minim
+                            aliquip deserunt ullamco dolor qui velit cillum commodo proident nulla deserunt.
+
+                            Dolore in non irure est enim in sint deserunt laboris. Laborum deserunt cupidatat eu ad
+                            tempor nisi non qui aute voluptate culpa in laborum. Aute cillum aliqua id amet sit laboris
+                            laboris ullamco do eiusmod sit culpa fugiat nulla.
+
+                            Labore reprehenderit aute velit consequat voluptate. Reprehenderit mollit minim ipsum quis
+                            consequat tempor et. Lorem dolore proident ut incididunt sunt id velit ullamco id eiusmod.
+                            Officia consectetur esse adipisicing ut cupidatat.
+
+                            Duis deserunt aliquip quis velit culpa non nostrud sunt amet. Esse laboris cupidatat
+                            exercitation non veniam nulla enim fugiat proident proident incididunt deserunt sunt aute.
+                            Aute officia deserunt quis mollit sint ut adipisicing magna eu nostrud tempor voluptate ex
+                            deserunt. Nostrud mollit nostrud aute id.
+
+                            Magna proident irure incididunt eiusmod velit ea exercitation voluptate aliqua elit ex amet.
+                            Et mollit fugiat aliquip nulla commodo eu dolore aliquip cupidatat sint exercitation in do
+                            quis. Fugiat aute enim et labore amet labore anim cillum sunt ipsum. Eu sunt incididunt
+                            cillum esse ad velit non culpa ut ut.
+
+                            Magna in nulla in do occaecat cillum ad ex. Exercitation excepteur voluptate enim pariatur.
+                            Magna deserunt sit ad culpa qui enim aliqua pariatur dolore.
+
+                            Do proident anim et non proident. Nisi deserunt ipsum aute Lorem ullamco et id eiusmod amet.
+                            Nisi in aliqua do culpa tempor reprehenderit tempor laborum magna nisi quis pariatur.
+
+                            Aliqua aliqua duis nostrud do magna voluptate consequat consequat. Culpa do consectetur
+                            deserunt officia cillum quis id deserunt nulla id nulla culpa ipsum. Ex duis dolore officia
+                            officia adipisicing exercitation ex consectetur qui magna ad nulla adipisicing anim. Eu enim
+                            velit proident minim non. Ea aliqua laboris reprehenderit et pariatur consequat voluptate
+                            magna exercitation in officia occaecat irure ea. Sunt commodo pariatur est fugiat.</p>
+                    </div>
+                    <div id="item-2">
+                        <h4>Item 2</h4>
+                        <p>Aliqua labore eu mollit ullamco ut ipsum deserunt. Reprehenderit incididunt ullamco id dolor
+                            cupidatat et duis fugiat. Ad excepteur ut sint eu consequat pariatur eiusmod reprehenderit
+                            proident. Voluptate elit cillum consectetur velit. Labore sit pariatur culpa ipsum non
+                            occaecat mollit duis veniam laborum et et exercitation consequat. Aliquip consequat laboris
+                            proident dolor nostrud fugiat dolor. Nulla irure exercitation commodo Lorem ea sit commodo
+                            esse.
+
+                            Esse cupidatat aliqua id exercitation voluptate duis non est adipisicing id mollit. Nulla
+                            Lorem commodo officia magna amet in nulla commodo consectetur. Pariatur nostrud voluptate ex
+                            laboris non ullamco velit do. Pariatur et sint ad dolor deserunt.
+
+                            In id irure et esse incididunt in cupidatat reprehenderit. Enim nulla cillum magna laborum
+                            in laboris do in aliqua sit aute tempor velit. Culpa labore ipsum et dolor voluptate in quis
+                            cupidatat aliqua aliquip laborum in do ad. Sit commodo est ea enim. Velit laboris minim
+                            aliquip deserunt ullamco dolor qui velit cillum commodo proident nulla deserunt.
+
+                            Dolore in non irure est enim in sint deserunt laboris. Laborum deserunt cupidatat eu ad
+                            tempor nisi non qui aute voluptate culpa in laborum. Aute cillum aliqua id amet sit laboris
+                            laboris ullamco do eiusmod sit culpa fugiat nulla.
+
+                            Labore reprehenderit aute velit consequat voluptate. Reprehenderit mollit minim ipsum quis
+                            consequat tempor et. Lorem dolore proident ut incididunt sunt id velit ullamco id eiusmod.
+                            Officia consectetur esse adipisicing ut cupidatat.
+
+                            Duis deserunt aliquip quis velit culpa non nostrud sunt amet. Esse laboris cupidatat
+                            exercitation non veniam nulla enim fugiat proident proident incididunt deserunt sunt aute.
+                            Aute officia deserunt quis mollit sint ut adipisicing magna eu nostrud tempor voluptate ex
+                            deserunt. Nostrud mollit nostrud aute id.
+
+                            Magna proident irure incididunt eiusmod velit ea exercitation voluptate aliqua elit ex amet.
+                            Et mollit fugiat aliquip nulla commodo eu dolore aliquip cupidatat sint exercitation in do
+                            quis. Fugiat aute enim et labore amet labore anim cillum sunt ipsum. Eu sunt incididunt
+                            cillum esse ad velit non culpa ut ut.
+
+                            Magna in nulla in do occaecat cillum ad ex. Exercitation excepteur voluptate enim pariatur.
+                            Magna deserunt sit ad culpa qui enim aliqua pariatur dolore.
+
+                            Do proident anim et non proident. Nisi deserunt ipsum aute Lorem ullamco et id eiusmod amet.
+                            Nisi in aliqua do culpa tempor reprehenderit tempor laborum magna nisi quis pariatur.
+
+                            Aliqua aliqua duis nostrud do magna voluptate consequat consequat. Culpa do consectetur
+                            deserunt officia cillum quis id deserunt nulla id nulla culpa ipsum. Ex duis dolore officia
+                            officia adipisicing exercitation ex consectetur qui magna ad nulla adipisicing anim. Eu enim
+                            velit proident minim non. Ea aliqua laboris reprehenderit et pariatur consequat voluptate
+                            magna exercitation in officia occaecat irure ea. Sunt commodo pariatur est fugiat.</p>
+                    </div>
+                    <div id="item-3">
+                        <h4>Item 3</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quas nulla nobis nesciunt
+                            unde. Iste beatae, vel eum nihil blanditiis adipisci doloribus sapiente exercitationem vero
+                            ex! Ut rem sint odit.</p>
+                    </div>
+                    <div id="item-3-1">
+                        <h5>Item 3-1</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quas nulla nobis nesciunt
+                            unde. Iste beatae, vel eum nihil blanditiis adipisci doloribus sapiente exercitationem vero
+                            ex! Ut rem sint odit.</p>
+                    </div>
+                    <div id="item-3-2">
+                        <h5>Item 3-2</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quas nulla nobis nesciunt
+                            unde. Iste beatae, vel eum nihil blanditiis adipisci doloribus sapiente exercitationem vero
+                            ex! Ut rem sint odit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- Cambiar footer -->
+        <footer class="container-fluid px-0 pt-3">
+			<div class="row align-items-center bg-custom py-2">
+				<div class="col-12 col-md-6 mt-3">
+					<p class="text-light text-center text-md-start">
+						© 2025 AmigosFlamenquines. Todos los derechos reservados.
+					</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="text-center text-md-end">
+						<a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-tiktok"></i></a>
+						<a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-instagram"></i></a>
+						<a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-twitter-x"></i></a>
+						<a href="#" class="btn btn-outline-light btn-floating m-1"><i class="bi bi-facebook"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,7 +1,31 @@
+/* Colores personalizados */
 .bg-custom {
 	background-color: #881536;
 }
 
+.bg-our-green {
+	background-color: #106744;
+}
+
+.bg-our-green-two {
+	background-color: #22805A;
+}
+
+/* Fuentes de letras */
+body {
+	font-family: "Dosis", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+footer {
+	font-family: "PT Serif", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Clases para las fuentes de letras */
 .pt-serif-regular {
 	font-family: "PT Serif", serif;
 	font-weight: 400;
@@ -26,25 +50,24 @@
 	font-style: italic;
 }
 
-.dosis-700 {
+.dosis-400 {
 	font-family: "Dosis", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 700;
+	font-weight: 400;
 	font-style: normal;
 }
 
 .bg-cont-image {
-  background-image: url('../assets/img/img_decoracion_pagina/fondo_andaluz.jpg'); /* ajusta la ruta */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+	background-image: url('../assets/img/img_decoracion_pagina/fondo_andaluz.jpg');
+	/* ajusta la ruta */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-.bg-our-green{
-	background-color: #106744;
-}
-
-.bg-our-green-two{
-	background-color: #22805A;
+/* Valores para el scrollspy de la pagina del menu */
+.sticky-scrollspy {
+	top: 0px;
+	align-self: flex-start;
 }
