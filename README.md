@@ -1,6 +1,6 @@
 # 🍽️ Proyecto AmigosFlamenquines 🍽️
 
-![LogoAmigosFlamenquines](./assets/img/logo_restaurante.jpg)
+![LogoAmigosFlamenquines](./assets/img/img_logos/logo_restaurante.jpg)
 
 ## 🤔 ¿Que es este proyecto? 🤔
 
