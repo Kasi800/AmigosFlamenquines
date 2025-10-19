@@ -3,6 +3,10 @@
 	background-color: #881536;
 }
 
+.bg-naranja {
+	background-color: #DA835E;
+}
+
 .bg-our-green {
 	background-color: #106744;
 }
@@ -71,12 +75,6 @@ footer {
 	top: 0px;
 	align-self: flex-start;
 }
-
-.size-img-card-md{
-	height: 300px;
-	width: 300px;
-}
-
 
         /* 1. Estilo para el elemento activo del Scrollspy (Fondo: #881536, Texto: Blanco) */
         .sticky-scrollspy .nav-link.active {
