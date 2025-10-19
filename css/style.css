@@ -76,3 +76,32 @@ footer {
 	height: 300px;
 	width: 300px;
 }
+
+
+        /* 1. Estilo para el elemento activo del Scrollspy (Fondo: #881536, Texto: Blanco) */
+        .sticky-scrollspy .nav-link.active {
+            /* Cambia el color de fondo al rojo granate deseado */
+            background-color: #881536 !important; 
+            /* Asegura que el texto sea blanco para contrastar */
+            color: #ffffff !important;
+            /* Añade un poco de relleno para que se vea como un botón */
+            padding: 0.5rem 1rem !important; 
+            border-radius: 0.25rem; /* Bordes redondeados */
+        }
+
+        /* 2. Estilo para los enlaces normales (Texto: Blanco) */
+        .sticky-scrollspy .nav-link {
+            /* Asegura que el texto de los enlaces no activos sea blanco para que se vea bien en el fondo verde */
+            color: #ffffff !important;
+            /* Elimina el fondo por defecto si lo tuviera */
+            background-color: transparent !important;
+            padding: 0.5rem 1rem !important;
+        }
+        
+        /* 3. Estilo para el efecto hover (Fondo: #881536 con opacidad, Texto: Blanco o el color de la clase Bootstrap) */
+        .sticky-scrollspy .nav-link:hover {
+            /* Se podría usar un color más claro o semitransparente para el hover */
+            background-color: rgba(136, 21, 54, 0.7) !important; /* Un poco de opacidad */
+            color: #ffffff !important;
+        }
+
