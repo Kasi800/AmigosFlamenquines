@@ -28,8 +28,8 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
-	<body class="bg-cont-image">
-		<div class="container-fluid">
+	<body>
+		<div class="container-fluid bg-cont-image d-flex flex-column min-vh-100">
 			<!-- Navbar -->
 			<div class="row">
 				<nav class="navbar navbar-expand-lg bg-custom">
@@ -56,15 +56,13 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 								<li class="nav-item">
-									<a class="nav-link text-light mx-1 dosis-200" href="index.html"
-										>Inicio</a
+									<a class="nav-link text-light mx-1 dosis-200" href="menu.html"
+										>Menu</a
 									>
 								</li>
 								<li class="nav-item">
-									<a
-										class="nav-link text-light mx-1 dosis-200"
-										href="reserva.html"
-										><i class="bi bi-calendar-event"></i> Reservar</a
+									<a class="nav-link text-light mx-1 dosis-200" href="menu.html"
+										>Menu</a
 									>
 								</li>
 							</ul>
@@ -74,7 +72,10 @@
 			</div>
 
 			<!-- Contenido reserva -->
-			<div class="row justify-content-center my-5 px-3 px-md-5">
+			<div
+				class="row justify-content-center my-5 px-3 px-md-5 position-relative"
+			>
+				<!-- Formulario reserva -->
 				<div
 					class="col-12 col-md-10 col-lg-8 bg-custom text-white rounded p-4 shadow"
 				>
@@ -152,11 +153,32 @@
 						</div>
 					</form>
 				</div>
+				<!-- Toast de confirmación -->
+				<div
+					class="position-absolute top-0 end-0 translate-middle-y p-3 w-auto"
+				>
+					<div
+						id="reservaToast"
+						class="toast align-items-center text-bg-success border-0"
+						role="alert"
+						aria-live="assertive"
+						aria-atomic="true"
+					>
+						<div class="d-flex">
+							<button
+								type="button"
+								class="btn-close btn-close-white ms-2 me-2 m-auto"
+								data-bs-dismiss="toast"
+								aria-label="Cerrar"
+							></button>
+							<div class="toast-body">¡Reserva enviada con éxito!</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<!-- Footer -->
-			<!-- Cambiar footer -->
-			<footer class="container-fluid px-0 pt-3">
+			<footer class="container-fluid px-0 mt-auto">
 				<div class="row align-items-center bg-custom py-2">
 					<div class="col-12 col-md-6 mt-3">
 						<p class="text-light text-center text-md-start">
@@ -187,5 +209,16 @@
 			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			document.querySelector("form").addEventListener("submit", function (e) {
+				e.preventDefault();
+
+				const toastEl = document.getElementById("reservaToast");
+				const toast = new bootstrap.Toast(toastEl);
+				toast.show();
+
+				this.reset();
+			});
+		</script>
 	</body>
 </html>
