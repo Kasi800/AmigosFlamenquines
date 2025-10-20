@@ -10,7 +10,7 @@ Este proyecto es totalmente **responsive**, se puede visualizar para dispositivo
 
 ## 📝 Tecnologías Utilizadas 📝
 
-![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![github](https://img.shields.io/badge/GiHub-FCC624?style=for-the-badge&logo=github&logoColor=white&color=black)
+![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  ![css](https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS)  ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![github](https://img.shields.io/badge/GiHub-FCC624?style=for-the-badge&logo=github&logoColor=white&color=black)
 
 ## 👥 Integrantes 👥
 
@@ -20,6 +20,6 @@ Este proyecto es totalmente **responsive**, se puede visualizar para dispositivo
 
 ## 📍 Enlaces 📍
 
-- **[Enlaces del Repositorio 🔗](https://github.com/xamarbel660/AmigosFlamenquines)**
+- **[Enlace del Repositorio 🔗](https://github.com/xamarbel660/AmigosFlamenquines)**
 
 - **[Enlace de la página Web🌐](https://amigos-flamenquines.vercel.app/)**
