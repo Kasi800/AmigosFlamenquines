@@ -7,14 +7,6 @@
 	background-color: #DA835E;
 }
 
-.bg-our-green {
-	background-color: #106744;
-}
-
-.bg-our-green-two {
-	background-color: #22805A;
-}
-
 /* Fuentes de letras */
 body {
 	font-family: "Dosis", sans-serif;
@@ -84,7 +76,7 @@ footer {
             color: #ffffff !important;
             /* Añade un poco de relleno para que se vea como un botón */
             padding: 0.5rem 1rem !important; 
-            border-radius: 0.25rem; /* Bordes redondeados */
+            border-radius: 0.50rem; /* Bordes redondeados */
         }
 
         /* 2. Estilo para los enlaces normales (Texto: Blanco) */
