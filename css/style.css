@@ -1,4 +1,4 @@
-/* Colores personalizados */
+/* Colores de nuestra paleta */
 .bg-custom {
 	background-color: #881536;
 }
@@ -11,7 +11,7 @@
 body {
 	font-family: "Dosis", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
 }
 
@@ -21,7 +21,18 @@ footer {
 	font-style: normal;
 }
 
-/* Clases para las fuentes de letras */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "PT Serif", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Clases para las fuentes de letras
 .pt-serif-regular {
 	font-family: "PT Serif", serif;
 	font-weight: 400;
@@ -52,8 +63,9 @@ footer {
 	font-weight: 400;
 	font-style: normal;
 }
-/* Fin Clases para las fuentes de letras */
+*/
 
+/* Fondo de la página */
 .bg-cont-image {
 	background-image: url('../assets/img/img_decoracion_pagina/fondo_andaluz.jpg');
 	/* ajusta la ruta */
@@ -64,35 +76,19 @@ footer {
 }
 
 /* Valores para el scrollspy de la pagina del menu */
+/* Es para que el scrollspy se quede pegado en la parte superior */
 .sticky-scrollspy {
 	top: 0px;
 	align-self: flex-start;
 }
 
-        /* 1. Estilo para el elemento activo del Scrollspy (Fondo: #881536, Texto: Blanco) */
-        .sticky-scrollspy .nav-link.active {
-            /* Cambia el color de fondo al rojo granate deseado */
-            background-color: #881536 !important; 
-            /* Asegura que el texto sea blanco para contrastar */
-            color: #ffffff !important;
-            /* Añade un poco de relleno para que se vea como un botón */
-            padding: 0.5rem 1rem !important; 
-            border-radius: 0.50rem; /* Bordes redondeados */
-        }
+/* Estilo para el elemento activo del Scrollspy*/
+.nav-link.active {
+	background-color: #881536 !important;
+}
 
-        /* 2. Estilo para los enlaces normales (Texto: Blanco) */
-        .sticky-scrollspy .nav-link {
-            /* Asegura que el texto de los enlaces no activos sea blanco para que se vea bien en el fondo verde */
-            color: #ffffff !important;
-            /* Elimina el fondo por defecto si lo tuviera */
-            background-color: transparent !important;
-            padding: 0.5rem 1rem !important;
-        }
-        
-        /* 3. Estilo para el efecto hover (Fondo: #881536 con opacidad, Texto: Blanco o el color de la clase Bootstrap) */
-        .sticky-scrollspy .nav-link:hover {
-            /* Se podría usar un color más claro o semitransparente para el hover */
-            background-color: rgba(136, 21, 54, 0.7) !important; /* Un poco de opacidad */
-            color: #ffffff !important;
-        }
-
+/* Estilo para el efecto hover (Fondo: #881536 con opacidad) */
+/* Se podria quitar */
+.nav-link:hover {
+	background-color: rgba(136, 21, 54, 0.7) !important;
+}
