@@ -1,10 +1,16 @@
 /* Colores de nuestra paleta */
-.bg-custom {
-	background-color: #881536;
+:root {
+	--bs-primary: #881536;
+	--bs-secondary: #DA835E;
+	--bs-primary-rgb: 136, 21, 54;
 }
 
-.bg-naranja {
-	background-color: #DA835E;
+.bg-primary {
+	background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+	background-color: var(--bs-secondary) !important;
 }
 
 /* Fuentes de letras */
@@ -84,11 +90,10 @@ h6 {
 
 /* Estilo para el elemento activo del Scrollspy*/
 .nav-link.active {
-	background-color: #881536 !important;
+	background-color: var(--bs-primary) !important;
 }
 
 /* Estilo para el efecto hover (Fondo: #881536 con opacidad) */
-/* Se podria quitar */
 .nav-link:hover {
-	background-color: rgba(136, 21, 54, 0.7) !important;
+	background-color: rgba(var(--bs-primary-rgb), 0.7) !important;
 }
